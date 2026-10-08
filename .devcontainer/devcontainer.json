@@ -1,0 +1,10 @@
+{
+  "name": "Apache Lucene Workshop",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "hostRequirements": { "cpus": 2 },
+  "postCreateCommand": "java -cp 'lib/*' BuildIndex.java",
+  "customizations": {
+    "codespaces": { "openFiles": ["README.md"] },
+    "vscode": { "extensions": [] }
+  }
+}
